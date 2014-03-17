@@ -1,7 +1,7 @@
 from django.db import models
 
 class User(models.Model):
-    UserID = models.AutoField(primary_key=True)
+#     UserID = models.AutoField(primary_key=True)
     Username = models.CharField(max_length=128, unique=True)
     Password = models.CharField(max_length=128)
     Email = models.EmailField()
@@ -13,7 +13,7 @@ class User(models.Model):
         return self.Username
     
 class Product(models.Model):
-    ProductID = models.AutoField(primary_key=True)
+#     ProductID = models.AutoField(primary_key=True)
     ProductName = models.CharField(max_length=128, unique=True)
     Description = models.CharField(max_length=128)
     PostDate = models.DateTimeField()
@@ -26,9 +26,9 @@ class Product(models.Model):
         return self.ProductName
     
 class Bid(models.Model):
-    BidID = models.AutoField(primary_key=True)
-    UserID = models.ForeignKey(User)
-    ProductID = models.ForeignKey(Product)
+#     BidID = models.AutoField(primary_key=True)
+    User = models.ForeignKey(User)
+    Product = models.ForeignKey(Product)
     BidNo = models.IntegerField(default=0)
     Time = models.DateTimeField()
     Quantity = models.IntegerField(default=0)
@@ -38,11 +38,11 @@ class Bid(models.Model):
         return self.BidID
     
 class Comment(models.Model):
-    UserID = models.ForeignKey(User)
-    ProductID = models.ForeignKey(Product)
+    User = models.ForeignKey(User)
+    Product = models.ForeignKey(Product)
     Comment = models.CharField(max_length=128)
     
 class Rating(models.Model):
-    UserID = models.ForeignKey(User)
-    ProductID = models.ForeignKey(Product)
+    User = models.ForeignKey(User)
+    Product = models.ForeignKey(Product)
     Rating = models.IntegerField(default=0)
