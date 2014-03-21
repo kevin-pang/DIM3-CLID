@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+{% load static %} 
+<html dir="ltr" lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>CLID - Login</title>
+<link href="{% static "image/favicon.png" %}" rel="icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="clean modern and elegant corporate look eCommerce html template">
+<meta name="author" content="">
+<!-- CSS Part Start-->
+<link rel="stylesheet" type="text/css" href="{% static "css/stylesheet.css" %}" />
+<link rel="stylesheet" type="text/css" href="{% static "css/slideshow.css" %}" media="screen" />
+<link rel="stylesheet" type="text/css" href="{% static "css/flexslider.css" %}" media="screen" />
+<link rel="stylesheet" type="text/css" href="{% static "js/colorbox/colorbox.css" %}" media="screen" />
+<link rel="stylesheet" type="text/css" href="{% static "css/carousel.css" %}" media="screen" />
+<!-- CSS Part End-->
+<!-- JS Part Start-->
+<script type="text/javascript" src="{% static "js/jquery-1.7.1.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.nivo.slider.pack.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.flexslider.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.easing-1.3.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.jcarousel.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/colorbox/jquery.colorbox-min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/tabs.js" %}"></script>
+<script type="text/javascript" src="{% static "js/cloud_zoom.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.dcjqaccordion.js" %}"></script>
+<script type="text/javascript" src="{% static "js/custom.js" %}"></script>
+<script type="text/javascript" src="{% static "js/html5.js" %}"></script>
+<!-- JS Part End-->
+<!-- Google Fonts (Droid Sans) Start -->
+<link href='//fonts.googleapis.com/css?family=Droid+Sans&v1' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=&v1' rel='stylesheet' type='text/css'>
+<!-- Google Fonts (Droid Sans) End -->
+</head>
+<body>
+<div class="wrapper-box">
+  <div class="main-wrapper">
+    <!--Header Part Start-->
+    <header id="header">
+      <div class="htop">
+        <div class="links"> <a href="/clid/login/">Login</a> <a href="/clid/register/">Register</a> <a href="/clid/myaccount/">My Account</a></div>
+      </div>
+      <section class="hsecond">
+        <div id="logo"><a href="/clid/index/" <img src="{% static "image/clogo.png" %}" title="clid" alt="clid" /></a></div>
+
+        <!--Mini Shopping Cart Start-->
+        <section id="cart">
+        <div class="button-search"></div>
+          <input type="text" name="search" placeholder="Search" value="" />
+        </section>
+        <!--Mini Shopping Cart End-->
+        <div class="clear"></div>
+      </section>
+      <!--Top Menu(Horizontal Categories) Start   {% static "" %}  -->
+      <nav id="menu">
+        <ul>
+          <li class="home"><a title="Home" href="/clid/index/"><span>Home</span></a></li>
+          <li class="categories_hor"><a>Categories</a>
+            <div>
+              <div class="column"> <a href="/clid/category/">Electronics</a>
+                <div>
+                  <ul>
+                    <li><a href="/clid/category/">IT Gadgets</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="column"> <a href="/clid/category/">Fashion</a>
+                <div>
+                  <ul>
+                    <li><a href="/clid/category/">Tops</a></li>
+                    <li><a href="/clid/category/">Bottoms</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="column"> <a href="/clid/category/">Sports</a>
+                <div>
+                  <ul>
+                    <li><a href="/clid/category/">Shoes</a></li>
+                    <li><a href="/clid/category/">Accessories</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="column"><a href="/clid/category/">Books</a>
+                <div>
+                  <ul>
+                    <li><a href="/clid/category/">Fiction</a></li>
+                    <li><a href="/clid/category/">Non-Fiction</a></li>
+                    <li><a href="/clid/category/">Horror</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a>My Account</a>
+            <div>
+              <ul>
+                <li><a href="/clid/myaccount/">My Account</a></li>
+                <li><a href="/clid/bidhistory/">Bid History</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="/clid/contact-us/">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!--Top Menu(Horizontal Categories) End  {% static "" %}  -->
+      <!-- Mobile Menu Start-->
+      <nav id="menu" class="m-menu"> <span>Menu</span>
+        <ul>
+          <li class="categories"><a>Categories</a>
+                        <div>
+              <div class="column"> <a href="/clid/category">Electronics</a>
+                <div>
+                  <ul>
+                    <li><a href="/clid/category">IT Gadgets</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="column"> <a href="/clid/category">Fashion</a>
+                <div>
+                  <ul>
+                    <li><a href="/clid/category">Tops</a></li>
+                    <li><a href="/clid/category">Bottoms</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="column"> <a href="/clid/category">Sports</a>
+                <div>
+                  <ul>
+                    <li><a href="/clid/category">Shoes</a></li>
+                    <li><a href="/clid/category">Accessories</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="column"><a href="/clid/category">Books</a>
+                <div>
+                  <ul>
+                    <li><a href="/clid/category">Fiction</a></li>
+                    <li><a href="/clid/category">Non-Fiction</a></li>
+                    <li><a href="/clid/category">Horror</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Mobile Menu End-->
+    </header>
+    <!--Header Part End-->
+    <div id="container">
+      <!--Left Part-->
+      <div id="column-left">
+        <div class="box">
+          <div class="box-heading">Account</div>
+          <div class="box-content">
+            <ul class="list-item">
+              <li><a href="/clid/login">Login</a></li>
+              <li><a href="/clid/register">Register</a></li>
+              <li><a href="/clid/myaccount">My Account</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Left End-->
+      <!--Middle Part Start-->
+      <div id="content">
+        <!--Breadcrumb Part Start-->
+        <div class="breadcrumb"> <a href="/clid/index">Home</a> » <a href="/clid/myaccount"> My Account</a> » <a href="/clid/login">Login</a> </div>
+        <!--Breadcrumb Part End-->
+        <h1>Account Login</h1>
+        <div class="login-content">
+          <div class="left">
+            <h2>New Customer</h2>
+            <div class="content">
+              <p><b>Register Account</b></p>
+              <p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
+              <a class="button" href="#">Continue</a></div>
+          </div>
+          <div class="right">
+            <h2>Returning Customer</h2>
+            <form enctype="multipart/form-data" method="post" action="">
+              <div class="content">
+                <p>I am a returning customer</p>
+                <b>E-Mail Address:</b><br>
+                <input type="text" value="" name="email">
+                <br>
+                <br>
+                <b>Password:</b><br>
+                <input type="password" value="" name="password">
+                <br>
+                <a href="#">Forgotten Password</a><br>
+                <br>
+                <input type="submit" class="button" value="Login">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--Middle Part End-->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!--Footer Part Start-->
+  <footer id="footer">
+    <div class="fpart-inner">
+
+      <div class="column">
+        
+      <!-- Contact Details Start-->
+      <div class="contact contact_icon">
+        <h3>Contact Us</h3>
+        <ul>
+          <li class="address">Republic Polytechnic Pod E6</li>
+          <li class="mobile">+65 9123 4567</li>
+          <li class="email"><a href="mailto:info@contact.com">contact@clid.com</a></li>
+        </ul>
+      </div>
+      <!-- Contact Details End-->
+      <div class="clear"></div>
+      <div id="powered">
+        <!-- Payment Images Icon Start-->
+        <div class="payments_types part3"> </div>
+        <!-- Payment Images Icon End-->
+        <!-- Powered by Text Start-->
+        <div class="powered_text part3">
+          <p>CLID Html Template © 2013<br />
+            Template By: Team Source Code</a></p>
+        </div>
+        <!-- Powered by Text End-->
+
+        <div class="clear"></div>
+      </div>
+      <!-- Back to Top Button Start-->
+      <div class="back-to-top" id="back-top"><a title="Back to Top" href="javascript:void(0)" class="backtotop">Top</a></div>
+      <!-- Back to Top Button End-->
+    </div>
+  </footer>
+  <!--Footer Part End-->
+</div>
+</body>
+</html>
